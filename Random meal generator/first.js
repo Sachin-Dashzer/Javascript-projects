@@ -72,9 +72,7 @@ mealbtn.addEventListener("click", () => {
                             `;
 
         })
-        .catch(
-            alert("Api not working due to some error")
-        );
+	.catch((error) => "error found");
 
 })
 
