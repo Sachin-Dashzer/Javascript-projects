@@ -19,14 +19,14 @@
         #maindiv{
 
             text-align: center;
-            padding: 20vh;
+            padding-top: 10vh;
             line-height: 50px;
         }
 
         h1{
             font-size: 3rem;
         }
-        p{
+        h6{
             font-size: 1.6rem;
         }
         button{
@@ -40,17 +40,78 @@
             border: 1px solid white;
             color: white;
             cursor: pointer;
+            transition: all 0.4s ease-in-out;
         }
         button:hover{
-            box-shadow: 0 0 20px  white inset;
+            background-color: white;
+            color: #000;
         }
 
         .menu{
-            margin-top: 100px;
+            margin: 20px;
+            margin-top: 60px;
             border: 0.3px solid rgba(255, 255, 255, 0.305);
+            padding : 50px;
+            display: none;
         }
+        .menu h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .menu h1 span{
+            font-size: 1.8rem;
+        }
+        .menu ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .menu ul li{
+            list-style-type: none;
+            /* margin: 0 20px; */
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .menu ul li span{
+            font-weight: normal;
+        }
+        .menu .ingredient{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 35% 55%;
+            gap: 10%;
+            padding : 0 50px;
 
-
+        }
+        .menu .img{
+            /* width: 15rem;
+            height: 15rem; */
+            overflow: hidden;
+            box-shadow: 0 0 20px white;
+        }
+        img{
+            width: 100%;
+            
+            aspect-ratio: 4/4;
+            object-fit: contain;
+        }
+        .menu h3{
+            margin: 20px 0;
+            margin-top: 50px;
+            font-size: 2rem;
+            text-decoration: underline;
+        }
+        .menu .ingredient ul{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .menu .ingredient ul li{
+            font-size: 1rem;
+            list-style-type: disc;
+            line-height: 45px;
+        }
     </style>
 
 </head>
@@ -59,16 +120,16 @@
     <section id="maindiv">
 
         <h1>Feeling hungry?</h1>
-        <p>Let's start making some random meal by clicking this button</p>
+        <h6>Let's start making some random meal by clicking this button</h6>
 
-        <button>Click here</button>
+        <button>Click here 🍔</button>
 
-        <div class="menu">
-
-        </div>
         
     </section>
+    <div class="menu">
 
+    </div>
+   
     <script src="first.js">
         
     </script>
